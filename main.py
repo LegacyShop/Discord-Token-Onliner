@@ -29,7 +29,8 @@ class Onliner():
 
     def get_random_presence(self):
         status = random.choice(["online","dnd","idle"])
-        return {"status":status,"since":0,"activites":[],"afk":False}
+        return {"status":status,"since":0,"activites":[],"afk":Fal
+                se}
     
     def connect_to_ws(self, token):
         from websocket import WebSocketApp
